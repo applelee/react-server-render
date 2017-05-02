@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "supervisor -w server bin/www",
-    "pm2": "pm2 start bin/www ",
-    "trans": "cross-env NODE_ENV=transComponent gulp"
+    "server": "supervisor -w server bin/www",
+    "trans": "cross-env NODE_ENV=transComponent gulp",
+    "pm2": "pm2 start bin/www "
   },
   "dependencies": {
     "debug": "^2.6.3",
