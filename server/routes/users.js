@@ -15,8 +15,13 @@ router.get('/', async (ctx, next) => {
   ctx.body = await haha.then(res => res)
 })
 
-router.get('/bar', (ctx,next) => {
-  ctx.body = reactSeverRender(Test1,{lala:'cao ni lala!'})
+router.get('/bar', async (ctx,next) => {
+  ctx.state = {
+    title:'xixi',
+    view:reactSeverRender(Test1,{lala:'cao ni lala!'})
+  }
+
+  await ctx.render('index')
 })
 
-module.exports = router;
+module.exports = router

@@ -5,6 +5,8 @@
   "scripts": {
     "server": "supervisor -w server bin/www",
     "trans": "cross-env NODE_ENV=transComponent gulp",
+    "client_dev": "cross-env NODE_ENV=development gulp",
+    "client_pro": "cross-env NODE_ENV=production gulp",
     "pm2": "pm2 start bin/www "
   },
   "dependencies": {
@@ -32,10 +34,15 @@
     "babel-preset-stage-1": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "babel-preset-stage-3": "^6.24.1",
+    "babelify": "^7.3.0",
+    "browserify": "^14.3.0",
     "cross-env": "^4.0.0",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
-    "nodemon": "^1.8.1"
+    "gulp-uglify": "^2.1.2",
+    "nodemon": "^1.8.1",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
   },
   "babel": {
     "presets": [
