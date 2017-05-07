@@ -19,9 +19,10 @@ export default class Test1 extends Component {
     }
   }
 
-  compnentDidMount(){
+  componentDidMount(){
     setTimeout(() => {
       // 异步处理
+      this.setState({type:false})
     },2000)
   }
 

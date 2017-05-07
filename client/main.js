@@ -6,6 +6,6 @@
   var clickDom = document.getElementById('click')
 
   clickDom.onclick = function(){
-    ReactDOM.render(<Test1 type={true} />,click)
+    ReactDOM.render(<Test1 type={true} />,document.getElementById('root'))
   }
 })()

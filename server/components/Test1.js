@@ -39,10 +39,13 @@ var Test1 = function (_Component) {
   }
 
   _createClass(Test1, [{
-    key: 'compnentDidMount',
-    value: function compnentDidMount() {
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      var _this2 = this;
+
       setTimeout(function () {
         // 异步处理
+        _this2.setState({ type: false });
       }, 2000);
     }
   }, {
